@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Budget App</title>
+   <!-- Link style css -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Link font -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+   <div class="container">
+
+      <div class="container-input grid">
+         <div class="container-budget">
+            <h1 class="title-budget">Budget</h1>
+            <h3 class="error" id="budget-error"></h3>
+            <input type="number" name="number" id="input-budget" placeholder="Jumlah Budget">
+            <button class="btn" id="set-budget">Set Budget</button>
+         </div>
+         <div class="container-penghasilan">
+            <h1 class="title-expenses">Expenses</h1>
+            <h3 class="error" id="expenses-error"></h3>
+            <input type="text" name="text" id="title-product" placeholder="Masukan Nama Product">
+            <input type="number" name="number" id="cost-product" placeholder="Masukan Biaya Product">
+            <button class="btn" id="cek-jumlah">Cek Jumlah</button>
+         </div>
+      </div>
+
+      <div class="ouput-container flex grid">
+         <div>
+            <h3>Total Bugdet</h3>
+            <span id="total-budget">0</span>
+         </div>
+         <div>
+            <h3>Expenses</h3>
+            <span id="total-expenses">0</span>
+         </div>
+         <div>
+            <h3>Balance</h3>
+            <span id="total-balance">0</span>
+         </div>
+      </div>
+
+      <div class="container-list">
+         <h1>Expenses List</h1>
+
+      </div>
+
+   </div>
+
+
+   <script src="script.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+
+</body>
+
+</html>
